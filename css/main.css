@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: montserrat, sans-serif;
+    background-image: url("BACKGROUND.jpg");
+   
+  }
+
+  
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  header:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    
+  }
+  header .content {
+    position: relative;
+    z-index: 1;
+  }
+  header .content h1 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  header .content h1 span {
+    font-weight: 500;
+  }
+  @media screen and (min-width: 480px) {
+    header .content h1 {
+      font-size: 36px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    header .content h1 {
+      font-size: 42px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    header .content h1 {
+      font-size: 56px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    header .content h1 {
+      font-size: 72px;
+    }
+  }
+  header .content h2 {
+    color: rgb(3, 3, 3);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0px;
+  }
+  @media screen and (min-width: 480px) {
+    header .content h2 {
+      font-size: 56px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    header .content h2 {
+      font-size: 72px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    header .content h2 {
+      font-size: 96px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    header .content h2 {
+      font-size: 128px;
+    }
+  }
+  header .content .countdown {
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    font-weight: 400;
+  }
+  @media screen and (min-width: 480px) {
+    header .content .countdown {
+      font-size: 42px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    header .content .countdown {
+      font-size: 56px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    header .content .countdown {
+      font-size: 72px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    header .content .countdown {
+      font-size: 88px;
+    }
+  }
+
+  section {
+  height: 150vh;
+  width: 100%;
+  background-image: url("BACKGROUND.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.texto{
+  color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: 1000;
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  color: rgb(27, 166, 247);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+button[type="submit"]:hover {
+  background-color: rgb(214, 226, 236);
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
